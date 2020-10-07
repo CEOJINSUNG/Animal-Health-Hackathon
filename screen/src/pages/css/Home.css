@@ -1,0 +1,94 @@
+/*네비*/
+
+.nav_left_icon {
+    display: inline-block;
+    margin-top: 27px;
+    margin-left: 16px;
+    margin-right: 13px;
+    width: 27px;
+    height: 27px;
+    line-height: normal;
+}
+
+.nav_right_icon {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 27px;
+    width: 27px;
+    height: 27px;
+    line-height: normal;
+}
+
+.title {
+    display: inline-block;
+
+}
+
+/*나의 반려동물*/
+
+#home_my_pet {
+    margin: 20px auto 0px;
+}
+
+#temp_card {
+    width: 380px;
+    height: 146px;
+    display: flex;
+    border-radius: 10px;
+}
+#card_image {
+    width: 130px;
+    padding-top: 21px;
+}
+
+#card_text {
+    text-align: left;
+}
+#card_text .bold_16{margin-top: 10px;}
+#card_text .bold_16:nth-child(1) {margin-top: 16px;}
+
+
+/*상태*/
+#pet_status {
+    width: 354px;
+    margin: 32px auto 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status_detail {
+    width: 90px;
+}
+.status_message {
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+/*팁*/
+#totay_tip {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+/*진단서비스*/
+#diag_service {
+    text-align: left;
+}
+.diag_link {
+    width: 380px;
+    height: 77px;
+    text-align: center;
+    line-height: 77px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#diag_start_link {    
+    background-color: black;
+    margin-top: 37px;
+}
+
+#diag_history_link {
+    margin-top: 16px;
+}
