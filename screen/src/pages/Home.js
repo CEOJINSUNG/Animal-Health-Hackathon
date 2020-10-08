@@ -1,9 +1,9 @@
 import React from 'react';
-import './css/Common.css'
-import './css/Home.css'
-import './css/Common_font.css'
+import './css/Common.css';
+import './css/Common_font.css';
+import './css/Home.css';
 import { Link } from 'react-router-dom';
-import HomePetcard from './Home_Petcard'
+import HomePetcard from './Home_Petcard';
 
 const Home = () => {
     return (
@@ -11,18 +11,18 @@ const Home = () => {
             <nav className="top_nav">
                 <span className="float_left">
                     <Link to="/" className="nav_left_icon">
-                        <img src={require('./icon/pawprint.png')} alt="홈아이콘"  width="100%"/>
+                        <img src={require('./icon/pawprint.svg')} alt="홈아이콘"  width="100%"/>
                     </Link>
                 </span>
                 <span className="title float_left">Dang <span className="color_orange">Care</span></span>
                 <span className="float_right">
                     <Link to="/" className="nav_right_icon">
-                        <img src={require('./icon/gear.png')} alt="설정"  width="100%"/>
+                        <img src={require('./icon/gear.svg')} alt="설정"  width="100%"/>
                     </Link> 
                 </span>
                 <span className="float_right">
                     <Link to="/Registration"className="nav_right_icon">
-                        <img src={require('./icon/notification.png')} alt="알림"  width="100%"/>
+                        <img src={require('./icon/notification.svg')} alt="알림"  width="100%"/>
                     </Link> 
                 </span>           
             </nav>
@@ -30,7 +30,7 @@ const Home = () => {
             <div id="home_my_pet">
                 <div className="sub_menu">
                     <span className="bold_20">나의 반려동물</span>
-                    <span className="underline regular_12 opacity_06">추가하기</span>
+                    <Link to="/Registration" className="underline regular_12 opacity_06">추가하기</Link>
                 </div>
                 <HomePetcard />
             </div>
@@ -69,6 +69,9 @@ const Home = () => {
                     진료현황
                 </div>
             </div>
+            </div>
+            <div id="bottom_adv">
+                <img src={require('./icon/adv.png')} alt="광고" width="100%" />
             </div>
         </div>
     );

@@ -1,0 +1,29 @@
+/*강아지 고양이 선택*/
+.select_container {
+    width: 352px;
+    margin: 32px auto 0px;
+}
+
+.select_box_container {
+    display:flex;
+    justify-content: space-between;
+}
+
+.select_box {
+    width: 156px;
+    height: 156px;
+    border-radius: 10px;
+    border: 2px solid rgb(255,152,0);
+}
+.img_center {
+    margin-top: 35px;
+}
+.select_text {
+    padding-top: 20px;
+}
+
+/*입력 상자들*/
+.reg_form {
+    width: 346px;
+    height: 62px;
+}

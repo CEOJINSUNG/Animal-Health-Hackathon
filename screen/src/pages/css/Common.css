@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
 
+/*페이지*/
 .page {
     font-family: 'Nanum Gothic', 'serif';
     width: 412px;
     height: 847px;
+    position: relative;
     background-color: white;
     margin: 0px auto;
     text-align: center;
@@ -14,6 +16,21 @@
     margin: 0px auto;
 }
 
+/*네비*/
+
+.nav_left_icon {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;   
+    line-height: normal;
+}
+.nav_right_icon {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+    line-height: normal;
+}
+
 .top_nav {
     height: 80px;
     line-height: 80px;
@@ -21,7 +38,10 @@
     font-size: 24px;
     font-weight: bold;
 }
-
+.nav_with_title {
+    display: flex;
+    justify-content: space-between;
+}
 .sub_menu {
     display: flex;
     justify-content: space-between;
@@ -31,4 +51,8 @@
 
 .inline_block {
     display: inline-block;
+}
+
+.img_center {
+    line-height: 100%;
 }

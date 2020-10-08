@@ -1,13 +1,11 @@
 /*네비*/
 
 .nav_left_icon {
-    display: inline-block;
+    margin-left: 20px;
     margin-top: 27px;
-    margin-left: 16px;
     margin-right: 13px;
     width: 27px;
     height: 27px;
-    line-height: normal;
 }
 
 .nav_right_icon {
@@ -91,4 +89,10 @@
 
 #diag_history_link {
     margin-top: 16px;
+}
+
+/*광고*/
+#bottom_adv {
+    position: absolute;
+    bottom: -0px;
 }
