@@ -1,0 +1,48 @@
+#Medical_Board_Card {
+    text-align: left;
+    width: 380px;
+    margin: 16px auto 0px;
+}
+
+.med_card_title {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.med_card {
+    height: 120px;
+    box-sizing: border-box;
+}
+.med_card > div {
+    height: 16px;
+}
+.med_left {
+    display: inline-block;
+    width: 90px;
+}
+
+.recent_card {
+    height: 163px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.recent_top {
+    align-items: flex-end;
+}
+
+.recent_contents {
+    margin-top: 20px;
+    display: flex;
+}
+
+.recent_text > div {
+    margin-bottom: 9px;
+    text-align: left;
+}
+
+.recent_text {
+    margin-left: 12px;
+}

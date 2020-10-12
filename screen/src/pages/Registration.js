@@ -1,6 +1,4 @@
 import React from 'react';
-//import './css/Common.css';
-//import './css/Common_font.css';
 import './css/Registration.css';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +7,7 @@ const Registration = () => {
     return (
         <div className="page">
             <div className="top_nav nav_with_title">
-                <Link to="/" className="nav_left_icon">
+                <Link to="/Home" className="nav_left_icon">
                     <img src={require('./icon/left-arrow.svg')} alt="뒤로가기" width="16px"/>
                 </Link>
                 <span className="nav_center_title">등록하기</span>
@@ -36,8 +34,14 @@ const Registration = () => {
                         <option value="sit">시츄</option>
                         <option value="fom">포메라니안</option>
                     </select>
-                    radio로 할 예정
+                    <div className="reg_form gender_box_container">
+                        <div className="gender_box radius_10">수컷</div>
+                        <div className="gender_box radius_10">암컷</div>
+                    </div>
                     <input className="reg_form" type="text" placeholder="나이를 입력하세요"/>
+                    <div className="reg_submit background_orange color_white bold_20">
+                        완료
+                    </div>
                 </form>
             </div>
         </div>

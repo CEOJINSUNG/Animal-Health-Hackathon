@@ -1,6 +1,6 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import { Home, Registration} from 'pages';
+import { Route,Switch } from 'react-router-dom';
+import { Home, Registration, Splash,MedicalBoard} from 'pages';
 
 const screenStyle = {
     textAlign: 'center',
@@ -10,8 +10,12 @@ const screenStyle = {
 const App = () => {
     return (
         <div style={screenStyle}>
-            <Route exact path="/" component={Home} />
-            <Route path="/Registration" component={Registration} />
+            <Switch>
+                <Route exact path="/" component={Splash} />
+                <Route exact path="/Home" component={Home}/>
+                <Route path="/Registration" component={Registration} />
+                <Route exact path="/MedicalBoard" component={MedicalBoard} />          
+            </Switch>
         </div>
     );
 };

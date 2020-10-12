@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
 
+/*기본설정*/
+a {
+    text-decoration: none;
+}
+
+.text_link {
+    color: black;
+}
+
+
 /*페이지*/
 .page {
     font-family: 'Nanum Gothic', 'serif';
@@ -34,7 +44,7 @@
 .top_nav {
     height: 80px;
     line-height: 80px;
-    border-bottom: 1px black solid; /*임시*/
+   /* border-bottom: 1px black solid; */
     font-size: 24px;
     font-weight: bold;
 }
@@ -42,6 +52,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .sub_menu {
     display: flex;
     justify-content: space-between;
@@ -53,6 +64,14 @@
     display: inline-block;
 }
 
-.img_center {
-    line-height: 100%;
+.division_line {
+    border-top: 1px solid rgb(204,204,204);
+    height: 0px;
+    width: 380px;
+    margin: 16px auto;
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
 }

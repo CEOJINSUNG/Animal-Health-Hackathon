@@ -1,6 +1,6 @@
 /*네비*/
 
-.nav_left_icon {
+.nav_left_icon.home {
     margin-left: 20px;
     margin-top: 27px;
     margin-right: 13px;
@@ -95,4 +95,14 @@
 #bottom_adv {
     position: absolute;
     bottom: -0px;
+}
+
+#adv_coating {
+    width: 412px;
+    height: 66px;
+    background-color: black;
+    position: absolute;
+    z-index: 9999;
+    bottom: 5px;
+    opacity: 0.2;
 }
