@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './css/Splash.css';
+import './PageComponents/css/Splash.css';
 
 const Splash = () => {
     return (
@@ -11,7 +11,7 @@ const Splash = () => {
                 <div className="bold_24 color_orange">비대면 의료서비스</div>
             </div>
             <Link to="/Home">
-                <img  id="splash_img" src={require('./icon/pawprint.svg')} alt="당근케어" width="150px" />
+                <img  id="splash_img" src={require('./PageComponents/icon/pawprint.svg')} alt="당근케어" width="150px" />
             </Link>
             <div id="splash_title">
                 <span className="bold_30">Dang</span>

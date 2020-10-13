@@ -1,0 +1,93 @@
+.patient_profile {
+    margin: 12px 0 15px;
+}
+
+.patient_profile >.sub_menu {
+    margin-bottom: 15px;
+}
+
+#reserv_info_card {
+    height: 353px;   
+}
+
+#doctor_card {
+    display: flex;
+}
+
+.doctor_card_text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+.doctor_detail {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid rgb(115,216,255);
+    background-color: rgb(115,216,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.doctor_datail_container {
+    margin-left: 24px;
+    padding-top:12px;
+}
+
+.reserv_info_text {
+    border-top: 1px solid rgb(204,204,204);
+    margin-top: 15px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.reserv_info_text > div {
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.reserv_info_text > div > span:first-child {
+    text-align: left;
+    display: inline-block;
+    width: 101px;
+}
+
+.reserv_info_text > div > span:last-child {
+    text-align: left;
+    display: inline-block;
+    width: 240px;
+}
+
+#live_start_button {
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+/*ChooseDoctor*/
+
+.doctor_card_container {
+    margin-top: 16px;
+    border: 1px solid rgb(204,204,204);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 15px 8px;
+}
+
+.doctor_choose_button {
+    height: 30px;
+    background-color: rgb(115,216,255);
+    border-radius: 0 0 10px 10px;
+    line-height: 30px;
+}
+
+.choose_doctor {
+    margin-bottom: 15px;
+}

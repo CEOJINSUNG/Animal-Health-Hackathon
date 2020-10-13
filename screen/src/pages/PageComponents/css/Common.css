@@ -9,6 +9,13 @@ a {
     color: black;
 }
 
+a:active {
+    color: black;
+}
+a:link {
+    color: black;
+}
+
 
 /*페이지*/
 .page {

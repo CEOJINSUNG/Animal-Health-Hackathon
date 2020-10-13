@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Registration.css';
+import './PageComponents/css/Registration.css';
 import { Link } from 'react-router-dom';
 
 
@@ -8,7 +8,7 @@ const Registration = () => {
         <div className="page">
             <div className="top_nav nav_with_title">
                 <Link to="/Home" className="nav_left_icon">
-                    <img src={require('./icon/left-arrow.svg')} alt="뒤로가기" width="16px"/>
+                    <img src={require('./PageComponents/icon/left-arrow.svg')} alt="뒤로가기" width="16px"/>
                 </Link>
                 <span className="nav_center_title">등록하기</span>
                 <span className="nav_right_icon nav_empty_space"></span>
@@ -17,11 +17,11 @@ const Registration = () => {
                 <div className="select_container">
                     <div className="select_box_container">
                         <span>
-                            <div className="select_box"><img className="img_center" src={require('./icon/dog.png')} alt="강아지" width="90px"/></div>
+                            <div className="select_box"><img className="img_center" src={require('./PageComponents/icon/dog.png')} alt="강아지" width="90px"/></div>
                             <div className="select_text regular_20">강아지</div>
                         </span>
                         <span>
-                            <div className="select_box"><img className="img_center" src={require('./icon/cat.png')} alt="고양이" width="90px"/></div>
+                            <div className="select_box"><img className="img_center" src={require('./PageComponents/icon/cat.png')} alt="고양이" width="90px"/></div>
                             <div className="select_text regular_20">고양이</div>
                         </span>
                     </div>

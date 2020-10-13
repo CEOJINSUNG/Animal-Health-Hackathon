@@ -6,8 +6,9 @@
 .color_red {color:rgb(244,78,59);}
 .color_black{color: black;}
 .background_orange {background-color: rgb(255,152,0);}
+.background_red {background-color:rgb(244,78,59);}
 .radius_10 {border-radius: 10px;}
-.margin_bottom_8{  margin-bottom: 8px;  }
+.margin_bottom_8{  margin-bottom: 8px; }
 .padding_15 {padding: 15px;}
 .padding_left_8 {padding-left: 8px;}
 .float_left {float: left;}
