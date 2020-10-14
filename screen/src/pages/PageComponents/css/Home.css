@@ -42,9 +42,9 @@
 #card_text {
     text-align: left;
 }
-#card_text .bold_16{margin-top: 10px;}
-#card_text .bold_16:nth-child(1) {margin-top: 16px;}
-
+#card_text > div {margin-top: 10px;}
+#card_text > div:first-child {margin-top: 16px;}
+#card_text > div > span:first-child {width: 60px; display: inline-block;}
 
 /*상태*/
 #pet_status {

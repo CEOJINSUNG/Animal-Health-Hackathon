@@ -1,0 +1,27 @@
+#near_hospital > div {
+    margin: 15px 0 0px;
+    text-align: left;
+}
+
+.hospital_card {
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hospital_card_text {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.hospital_card_button {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+}

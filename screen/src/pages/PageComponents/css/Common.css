@@ -21,7 +21,7 @@ a:link {
 .page {
     font-family: 'Nanum Gothic', 'serif';
     width: 412px;
-    height: 847px;
+    min-height: 847px;
     position: relative;
     background-color: white;
     margin: 0px auto;

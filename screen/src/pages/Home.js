@@ -16,7 +16,7 @@ const Home = () => {
                 </span>
                 <span className="title float_left">Dang <span className="color_orange">Care</span></span>
                 <span className="float_right">
-                    <Link to="/" className="home nav_right_icon">
+                    <Link to="/ChooseHospital" className="home nav_right_icon">
                         <img src={require('./PageComponents/icon/gear.svg')} alt="설정"  width="100%"/>
                     </Link> 
                 </span>
@@ -62,9 +62,11 @@ const Home = () => {
                 <span className="bold_20">
                     진단 서비스
                 </span>
+                <Link to="/AI_Diagnosis">
                 <div id="diag_start_link" className="bold_20 color_white diag_link">
                     AI 진단 시작하기
                 </div>
+                </Link>
                 <Link to="/MedicalBoard">
                 <div id="diag_history_link" className="bold_20 diag_link color_black">
                     진료현황
