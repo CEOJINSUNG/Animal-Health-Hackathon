@@ -1,0 +1,71 @@
+#AI_diag_list{
+    list-style: none;
+    text-align: left;
+    font-weight: bold;
+}
+
+#AI_diag_list > li::before{
+    content: "\2022";
+    color: rgb(254,224,90);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -52px;
+    font-size: 36px;
+}
+
+#AI_diag_list > li > span{
+    position: relative;
+    bottom: 6px;
+}
+
+#AI_diag_button_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    position: relative;
+    left: -20px;
+}
+#AI_diag_button_container > button:nth-child(15){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.diag_input{
+    width: 80px;
+    margin-right: 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(204,204,204);
+}
+.diag_label{
+    width: 70px;
+    display: inline-block;
+    position: relative;
+    left: -15px;
+    margin-bottom: 10px;
+}
+
+#AI_diag_list form{font-weight: 300;}
+.diag_button_on{
+    color: white;
+    background-color: rgb(255,152,0);
+    font-weight: bold;
+}
+.diag_button_off{
+    background-color: white;
+}
+#AI_diag_button_container > button{
+    height: 30px;
+    padding: 2px;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 8px;
+}
+
+#AI_diag_button_container > button:focus{
+    outline: none;
+}
+#AI_diag_button_container > button:hover{
+    cursor: pointer;
+}
+
