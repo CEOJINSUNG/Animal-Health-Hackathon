@@ -82,3 +82,20 @@ a:link {
     display: flex;
     justify-content: space-between;
 }
+
+.button_bottom
+{
+    position: relative;
+    bottom: -35px;
+    height: 60px;
+    color: white;
+    line-height: 60px;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.button_bottom:focus{
+    outline: none;
+}

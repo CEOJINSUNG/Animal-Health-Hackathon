@@ -14,6 +14,10 @@
     height: 156px;
     border-radius: 10px;
     border: 2px solid rgb(255,152,0);
+    cursor: pointer;
+}
+.regi_button_on{
+    background-color: rgb(255,152,0);
 }
 .img_center {
     margin-top: 35px;
@@ -49,15 +53,17 @@
     font-weight: bold;
     line-height: 58px;
     box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 10px;
 }
+.gender_box_male {background-color: rgb(2,69,255); color:white;}
+.gender_box_female {background-color: rgb(242,0,224); color:white;}
 
 .gender_box:first-child {
-    color: rgb(2,69,255);
     border: 2px solid  rgb(2,69,255);
 }
 
 .gender_box:last-child {
-    color: rgb(242,0,224);
     border: 2px solid rgb(242,0,224);
 }
 
@@ -68,4 +74,6 @@
     border-radius: 30px;
     line-height: 56px;
     margin-top: 33px;
+    border: none;
+    cursor: pointer;
 }
