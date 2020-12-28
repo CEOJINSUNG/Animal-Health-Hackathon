@@ -1,6 +1,9 @@
 import React from 'react';
 import './PageComponents/css/Registration.css';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { signInWithGoogle, firestore, auth } from '../firebase';
+
 
 
 const Registration = () => {
@@ -44,7 +47,6 @@ const Registration = () => {
                 <div className="select_container">
                     <div className="select_box_container">
                         <span>
-                            <div className="select_box"><img className="img_center" src={require('./PageComponents/icon/dog.png')} alt="강아지" width="90px"/></div>
                             <div 
                                 className={kind=="강아지" ? 'regi_button_on select_box': 'select_box'} 
                                 onClick={onClickDog}>
