@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 const Registration = () => {
-<<<<<<< Updated upstream
-=======
     const [kind, setKind] = useState("");
     const [name, setName] = useState("");
     const [detail, setDetail] = useState("");
@@ -33,7 +31,6 @@ const Registration = () => {
     const onChangeDetail =(e) =>{setDetail(e.target.value);}
     const onClickMale = () =>{setSex("수컷");}
     const onClickFemale = () =>{setSex("암컷");}
->>>>>>> Stashed changes
     return (
         <div className="page">
             <div className="top_nav nav_with_title">
@@ -47,15 +44,12 @@ const Registration = () => {
                 <div className="select_container">
                     <div className="select_box_container">
                         <span>
-<<<<<<< Updated upstream
                             <div className="select_box"><img className="img_center" src={require('./PageComponents/icon/dog.png')} alt="강아지" width="90px"/></div>
-=======
                             <div 
                                 className={kind=="강아지" ? 'regi_button_on select_box': 'select_box'} 
                                 onClick={onClickDog}>
                                 <img className="img_center" src={require('./PageComponents/icon/dog.png')} alt="강아지" width="90px"/>
                             </div>
->>>>>>> Stashed changes
                             <div className="select_text regular_20">강아지</div>
                         </span>
                         <span>
@@ -80,15 +74,10 @@ const Registration = () => {
                         <div className={sex=="수컷" ? 'gender_box_male gender_box': 'gender_box color_blue'} onClick={onClickMale}>수컷</div>
                         <div className={sex=="암컷" ? 'gender_box_female gender_box': 'gender_box color_pink'} onClick={onClickFemale}>암컷</div>
                     </div>
-<<<<<<< Updated upstream
-                    <input className="reg_form" type="text" placeholder="나이를 입력하세요"/>
-                    <div className="reg_submit background_orange color_white bold_20">
-=======
                     <input className="reg_form" type="text" placeholder="나이를 입력하세요" onChange={onChangeMonth}/>
                     <button onClick={Registration} className="reg_submit background_orange color_white bold_20">
->>>>>>> Stashed changes
                         완료
-                    </div>
+                    </button>
                 </form>
             </div>
         </div>
