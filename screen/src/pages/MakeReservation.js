@@ -1,10 +1,14 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import PetCard from './PageComponents/Petcard';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
+import { useState } from 'react';
+import { firestore } from '../firebase';
 
 const MakeReservation = () => {
+    const [select, setSelect] = useState("")
+    const history = useHistory()
     const MONTHS = [
         '1월',
         '2월',
@@ -30,6 +34,14 @@ const MakeReservation = () => {
       ];
       const WEEKDAYS_SHORT = ['일', '월', '화', '수', '목', '금', '토'];
 
+      async function SelectDay(day) {
+          console.log(day.toLocaleDateString())
+          setSelect(day.toLocaleDateString())
+          await firestore.collection("UserInfo").doc("sample").update({
+              selectedDay: select,
+          })
+          history.push("/MedicalBoard")
+      }
     return (
         <div className="page">
             <div className="top_nav nav_with_title">
@@ -44,6 +56,9 @@ const MakeReservation = () => {
                 <PetCard />
                 <div className="sub_menu bold_24 margin_top_16">예약 일시</div>
                 <DayPicker 
+                    initialMonth={new Date()}
+                    selectedDays={select}
+                    onDayClick={SelectDay}
                     months={MONTHS}
                     weekdaysLong={WEEKDAYS_LONG}
                     weekdaysShort={WEEKDAYS_SHORT}

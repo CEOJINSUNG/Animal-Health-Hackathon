@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import "firebase/auth"
 import "firebase/firestore"
 
-const firebaseConfig = {
+export const firebaseConfig = {
     apiKey: "AIzaSyABX42B_fbT2Xdl58Xn4t7nc6K3xkW-d5A",
     authDomain: "dangcare-d9f7a.firebaseapp.com",
     databaseURL: "https://dangcare-d9f7a.firebaseio.com",

@@ -1,28 +1,41 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Petcard from './PageComponents/Petcard';
 import './PageComponents/css/AI_diag.css';
 import { useEffect, useState } from 'react';
-
+import { firestore } from "../firebase"
 
 
 const AI_Diagnosis = () => {
-    const [buttonValue, setButtonValue] = useState([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]) //19개, 0~18
-    const [height, setHeight] =useState();
-    const [weight, setWeight] = useState();
-    const [fecesTime, setFecesTime] = useState(); //배변주기
-    const [fecesStatus, setFecesStatus] = useState(); //배변 상태
+    const history = useHistory()
+    const [buttonValue, setButtonValue] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]) //19개, 0~18
+    const [height, setHeight] = useState(0);
+    const [weight, setWeight] = useState(0);
+    const [fecesTime, setFecesTime] = useState(0); //배변주기
+    const [fecesStatus, setFecesStatus] = useState(""); //배변 상태
 
     const onClickDiag = (e) => {
         setButtonValue(
             buttonValue.map((item, index) => {
                 if (index == e.target.value) {
-                  return !item;
+                    return !item;
                 } else {
-                  return item;
-                }}
-        ));
-        console.log({buttonValue});
+                    return item;
+                }
+            }
+            ));
+        console.log({ buttonValue });
+    }
+
+    async function Diagnosis() {
+        await firestore.collection("UserInfo").doc("sample").update({
+            height: height,
+            weight: weight,
+            fecesTime: fecesTime,
+            fecesStatus: fecesStatus,
+            status: buttonValue,
+        })
+        history.push("/ChooseHospital")
     }
 
     return (
@@ -90,7 +103,7 @@ const AI_Diagnosis = () => {
                 </div>
                 
             </div>
-            <button className="button_bottom background_orange bold_20">
+            <button onClick={() => Diagnosis()} className="button_bottom background_orange bold_20">
                 분석하기
             </button>
         </div>

@@ -13,27 +13,22 @@ const Registration = () => {
     const [sex, setSex] = useState("");
     const [month, setMonth] = useState(0);
     async function Registration() {
-        signInWithGoogle();
-        const User = auth.currentUser;
-        setTimeout(() => {
-            firestore.collection("UserInfo").doc(User.uid)
-            .set({
-                AnimalKind : kind,
+        await firestore.collection("UserInfo").doc("sample").update({
+                AnimalKind: kind,
                 name: name,
-                DetailKind : detail,
+                DetailKind: detail,
                 sex: sex,
-                age: month
+                age: month,
             })
-        }, 1500)
     }
 
-    const onClickDog = () => {setKind("강아지");}
-    const onClickCat = () => {setKind("고양이");}
-    const onChangeName= (e) =>{setName(e.target.value);}
-    const onChangeMonth =(e) =>{setMonth(e.target.value);}
-    const onChangeDetail =(e) =>{setDetail(e.target.value);}
-    const onClickMale = () =>{setSex("수컷");}
-    const onClickFemale = () =>{setSex("암컷");}
+    const onClickDog = () => { setKind("강아지"); }
+    const onClickCat = () => { setKind("고양이"); }
+    const onChangeName = (e) => { setName(e.target.value); }
+    const onChangeMonth = (e) => { setMonth(e.target.value); }
+    const onChangeDetail = (e) => { setDetail(e.target.value); }
+    const onClickMale = () => { setSex("수컷"); }
+    const onClickFemale = () => { setSex("암컷"); }
     return (
         <div className="page">
             <div className="top_nav nav_with_title">
