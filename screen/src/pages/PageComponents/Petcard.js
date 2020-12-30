@@ -10,8 +10,7 @@ const Home_Petcard = () => {
     const [age, setAge] = useState(0);
 
     useEffect(() => {
-        firestore.collection("UserInfo").doc("sample").get()
-            .then(doc => {
+        firestore.collection("UserInfo").doc("sample").get().then(doc => {
                 setKind(doc.data().AnimalKind);
                 setName(doc.data().name);
                 setDetail(doc.data().DetailKind);
@@ -21,6 +20,7 @@ const Home_Petcard = () => {
                 setAge(year);
             })
     }, [])
+
     return (
         <div id="temp_card" className="color_white background_orange">
             <span id="card_image">
